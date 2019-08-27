@@ -1,15 +1,31 @@
 [pharmercy]
 comment = "Mercy can fly with the Pharah, damage boosting and healing"
-allies = ["Pharah", "Mercy"]
+allies = [["Pharah", "Mercy"]]
 score = 3
 
 [rein-zarya]
 comment = "Reinhardt and Zarya are a strong brawly frontline combination"
-allies = ["Reinhardt", "Zarya"]
+allies = [["Reinhardt", "Zarya"]]
+score = 3
+
+[halt-hook]
+comment = "Roadhog can hook into Orisa's halt"
+allies = [["Orisa", "Roadhog"]]
+score = 3
+
+[grav-dragon]
+comment = "Dragonstrike into Graviton Surge has team wipe potential"
+allies = [["Hanzo", "Zarya"]]
 score = 3
 
 [widow-counter-pharah]
 comment = "Widow can strongly counter Pharah due to her hitscan one shot potential"
-allies = ["Widowmaker"]
+allies = [["Widowmaker"]]
 enemies = ["Pharah"]
+score = 2
+
+[barrier-counter-widow]
+comment = "Barriers can make it hard for Widowmaker to get clean shots"
+allies = [["Reinhardt"], ["Sigma"]]
+enemies = ["Widowmaker"]
 score = 2

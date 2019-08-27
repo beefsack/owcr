@@ -1,8 +1,8 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::{BTreeSet, HashMap};
 
 use serde::Deserialize;
 
-#[derive(Deserialize, PartialEq, Eq, Hash)]
+#[derive(Deserialize, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Hero {
     Ana,
     Ashe,
@@ -37,7 +37,7 @@ pub enum Hero {
     Zenyatta,
 }
 
-#[derive(Deserialize, PartialEq, Eq, Hash)]
+#[derive(Deserialize, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub enum Map {
     HanamuraAttack,
     HanamuraDefense,
@@ -87,9 +87,9 @@ pub enum Map {
 #[derive(Deserialize)]
 pub struct Rule {
     pub comment: String,
-    pub allies: HashSet<Hero>,
-    pub enemies: Option<HashSet<Hero>>,
-    pub maps: Option<HashSet<Map>>,
+    pub allies: BTreeSet<BTreeSet<Hero>>,
+    pub enemies: Option<BTreeSet<Hero>>,
+    pub maps: Option<BTreeSet<Map>>,
     pub score: isize,
 }
 
