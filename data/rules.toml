@@ -1,0 +1,15 @@
+[pharmercy]
+comment = "Mercy can fly with the Pharah, damage boosting and healing"
+allies = ["Pharah", "Mercy"]
+score = 3
+
+[rein-zarya]
+comment = "Reinhardt and Zarya are a strong brawly frontline combination"
+allies = ["Reinhardt", "Zarya"]
+score = 3
+
+[widow-counter-pharah]
+comment = "Widow can strongly counter Pharah due to her hitscan one shot potential"
+allies = ["Widowmaker"]
+enemies = ["Pharah"]
+score = 2
