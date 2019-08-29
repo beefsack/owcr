@@ -1,3 +1,4 @@
+# Ana
 [pharmercy]
 comment = "Mercy can fly with the Pharah, damage boosting and healing"
 allies = [["Pharah", "Mercy"]]
@@ -26,6 +27,17 @@ score = 2
 
 [barrier-counter-widow]
 comment = "Barriers can make it hard for Widowmaker to get clean shots"
-allies = [["Reinhardt"], ["Sigma"]]
+allies = [["Reinhardt"], ["Sigma"], ["Orisa"], ["Winston"]]
 enemies = ["Widowmaker"]
 score = 2
+
+[bastion-with-barrier-into-choke]
+comment = "Bastion behind a barrier can lock down a choke point"
+allies = [["Bastion", "Orisa"]]
+maps = ["TempleOfAnubisDefense"]
+score = 2
+
+[mercy-damage-boost]
+comment = "Mercy damage boost is effective with a range of damage heroes"
+allies = [["Mercy", "Bastion"], ["Mercy", "Ashe"]]
+score = 1
